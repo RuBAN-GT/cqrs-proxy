@@ -1,0 +1,2 @@
+export const CQRS_PROXY_COMMAND_NAME = Symbol.for('CQRS_PROXY_COMMAND_NAME')
+export const CQRS_PROXY_COMMANDS = Symbol.for('CQRS_PROXY_COMMANDS')

@@ -1,0 +1,1 @@
+export const CQRS_PROXY_MESSAGE_PATTERN = 'CQRS_PROXY'

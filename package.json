@@ -1,0 +1,63 @@
+{
+  "name": "cqrs-proxy",
+  "version": "0.0.6",
+  "description": "The Nest.js CQRS bus helping to communicate with remote workers.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "nestjs",
+    "cqrs",
+    "microservices"
+  ],
+  "author": "Dmitry Ruban <dkruban@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/RuBAN-GT/cqrs-proxy",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@microsoft/api-extractor": "^7.49.2",
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/cqrs": "^11.0.0",
+    "@nestjs/microservices": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@swc/core": "^1.7.26",
+    "@types/node": "^20.10.5",
+    "@types/uuid": "^10.0.0",
+    "class-transformer": "^0.5.1",
+    "eslint": "^9.28.0",
+    "eslint-config-detemiro": "^2.0.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "rxjs": "^7.8.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.6",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.33.0",
+    "uuid": "^11.1.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">= 11.0.0",
+    "@nestjs/core": ">= 11.0.0",
+    "@nestjs/cqrs": ">= 11.0.0",
+    "@nestjs/microservices": ">= 11.0.0",
+    "@nestjs/schematics": ">= 11.0.0",
+    "class-transformer": ">= 0.5.0",
+    "rxjs": ">= 7.0.0",
+    "uuid": ">= 11.0.0"
+  }
+}
