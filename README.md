@@ -93,3 +93,22 @@ export class MyCommandHandler implements ICommandHandler<MyCommand> {
 })
 export class MyWorkerModule {}
 ```
+
+## Contributing
+
+I welcome contributions! Follow these steps to contribute:
+
+1. Setup environment
+   1. Fork the repository.
+   2. Clone your forked repository.
+   3. Install dependencies by running `yarn install`.
+2. Making Changes
+   1. Create a new branch for your changes.
+   2. Make your changes and commit them.
+   3. Push your changes to your forked repository.
+3. Submitting a Pull Request
+   1. Go to the original repository on GitHub and click the "New pull request" button.
+   2. Select your branch and submit the pull request.
+   3. Wait for the review and address any feedback.
+
+You are the star of this project! 🌟
