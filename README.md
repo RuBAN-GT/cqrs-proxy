@@ -62,7 +62,7 @@ export class MyService {
 
   public async run(): Promise<void> {
     const command = new MyCommand('Hello, World!')
-    await this.proxyBus.send(command) // returns metadata with id
+    await this.proxyBus.execute(command) // returns metadata with id
   }
 }
 ```
