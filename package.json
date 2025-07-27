@@ -1,6 +1,6 @@
 {
   "name": "cqrs-proxy",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "The Nest.js CQRS bus helping to communicate with remote workers.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

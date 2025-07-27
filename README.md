@@ -36,6 +36,29 @@ import { CqrsProxyClientModule } from 'cqrs-proxy'
   imports: [
     CqrsProxyClientModule.register({
       clientToken: 'AMQP_CLIENT', // The name of the microservice
+      useSyncMode: false, // Set to true if you want to use synchronous mode for DEBUG
+    }),
+  ],
+})
+export class MyModule {}
+```
+
+#### Async mode
+
+You can also use the async mode to register the module:
+
+```typescript
+import { CqrsProxyClientModule } from 'cqrs-proxy'
+
+@Module({
+  imports: [
+    CqrsProxyClientModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (config: ConfigService) => ({
+        clientToken: config.get('clientToken', 'AMQP_CLIENT'),
+        useSyncMode: config.get('useWorker', true),
+      }),
     }),
   ],
 })
